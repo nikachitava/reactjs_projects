@@ -1,0 +1,37 @@
+.inputHolder {
+    width: 379px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F9FA;
+    border-radius: 5px;
+    padding: 6px 17px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    margin-bottom: 6px;
+}
+
+.inputPlace {
+    border: none;
+    outline: none;
+    text-align: right;
+    background-color: transparent;
+    color: rgba(0, 71, 75, 1);
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.inputHolder:hover {
+    outline: 2px solid rgba(38, 194, 174, 1)
+}

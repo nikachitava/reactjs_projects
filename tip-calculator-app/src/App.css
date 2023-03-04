@@ -1,6 +1,21 @@
 .container {
+    width: 920px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2007);
+    border-radius: 25px;
+    padding: 32px;
     gap: 48px;
+}
+
+.form_side, .display_side {
+    width: 50%;
+}
+
+.display_side {
+    background: #00474B;
+    border-radius: 15px;
+    padding: 40px;
 }

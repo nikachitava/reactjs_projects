@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import iconDollar from './assets/images/icon-dollar.svg'
 import iconPerson from './assets/images/icon-person.svg'
+import InputComponent from './components/InputComponent/InputComponent'
+import TipComponent from './components/TipComponent/TipComponent'
+
+/* must change input type in number and usesate types also */
 
 function App() {
   const [bill, setBill] = useState<string>('0')
@@ -18,27 +21,41 @@ function App() {
     console.log("people changed")
   },[people])
 
-  const getTipValue = (e: any) => {
+  const billSet = (e: any) => {
+    setBill(e.target.value)
+    // console.log(e.target.value)
+  }
+
+  const peopleSet = (e: any) => {
+    setPeople(e.target.value)
+    // console.log(e.target.value)
+  }
+
+  const setTipValue = (e: any) => {
     setTip(e.target.value)
-    console.log(e.target.value)
   }
   
 
   return (
     <div className="container">
       <div className="form_side">
-        <h4>Bill</h4>
-        <div className="inputContainer">
-          <img src={iconDollar} alt="dollar"/>
-          <input placeholder="142.23" onChange={(e)=> {
-            setBill(e.target.value)
-          }}/>
-        </div>
+        <InputComponent 
+          title='Bill'
+          inputFunction = {billSet}
+        />
 
-        <p>Bill is {bill}</p>
+        <TipComponent
+          title='Select tip %'
+          setTipValue={setTipValue}
+        />
 
-        <h4>Select tip %</h4>
-        <div className="tipContainer">
+        <InputComponent 
+          title='Number of people'
+          inputFunction = {peopleSet}
+        />
+
+        {/* <div className="tipContainer">
+          <label>Select tip %</label>
           <button value={5} onClick={getTipValue}>5%</button>
           <button value={10} onClick={getTipValue}>10%</button> 
           <button value={15} onClick={getTipValue}>15%</button>
@@ -48,15 +65,15 @@ function App() {
 
         {<p>Tip % is {tip}</p>}
 
-        <h4>Number of people</h4>
         <div className="inputContainer">
+          <label>Number of people</label>
           <img src={iconPerson} alt="dollar"/>
           <input placeholder="5" onChange={(e)=> {
             setPeople(e.target.value)
           }}/>
-        </div>
+        </div> */}
 
-        {<p>Bill is {people}</p>} 
+        {/* {<p>Bill is {people}</p>}  */}
       </div>
 
       <div className="display_side">

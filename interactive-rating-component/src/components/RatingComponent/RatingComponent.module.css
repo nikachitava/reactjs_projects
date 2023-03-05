@@ -1,6 +1,6 @@
 .cardContainer {
   width: 412px;
-  margin: 200px auto;
+  margin: 150px auto;
   border-radius: 30px;
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
   padding: 32px;
@@ -44,6 +44,11 @@
   align-items: center;
   gap: 21px;
   margin: 24px 0 32px;
+}
+
+.active_rateButton {
+  color:#fff;
+  background-color: #FC7614;
 }
 
 .rateButton {

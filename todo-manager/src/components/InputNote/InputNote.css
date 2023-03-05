@@ -1,0 +1,36 @@
+.inputTodo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.noteInput {
+    width: 275px;
+    padding: 15px 48px;
+    outline: none;
+    border: none;
+    background: rgba(235, 239, 242, 1);
+}
+
+.noteInput::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #888888;
+}
+
+.addNote {
+    width: 88px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16.5px 36px;
+    background: #20EEB0;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+}

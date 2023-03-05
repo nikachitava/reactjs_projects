@@ -1,0 +1,41 @@
+.todo_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.left_side {
+    text-align: left;
+}
+
+.name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0D0D0D;
+    margin-bottom: 8px;
+}
+
+.time_todo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+}
+
+.right_side {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 18px;
+}
+
+.input[type="checkbox"] {
+    color: rgba(32, 238, 176, 1);
+    border: 2px solid rgba(32, 238, 176, 1)
+}

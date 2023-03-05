@@ -2,20 +2,25 @@ import './TipComponent.css'
 
 export default function TipComponent(props: {title: string, setTipValue: (e: any) => void}) {
 
-    let tips = [5, 10, 15, 25, 50]
     return (
         <div className="tipContainer">
             <h4 className='title'>{props.title}</h4>
             <div className='tipsButton'>
-                {tips.map((tip: number)=> 
+                {[5, 10, 15, 25, 50].map((tip: number)=> 
                     <button 
                         className='tipButton'
                         value={tip} 
                         onClick={props.setTipValue}
+                        key={tip}
                     >{tip}%
                 </button>
                 )}
-            <input className='tipInput' type="text" placeholder='Custom'/>
+                <input 
+                    className='tipInput' 
+                    type="text" 
+                    placeholder='Custom'
+                    onChange={props.setTipValue}
+                />
             </div>
         </div>
     )

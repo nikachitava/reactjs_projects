@@ -15,7 +15,30 @@
 }
 
 .display_side {
+    display: flex;
+    flex-direction: column;
     background: #00474B;
     border-radius: 15px;
     padding: 40px;
+}
+
+.resetButton {
+    margin-top: 70px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    padding: 9px 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background: #0D686D;
+    color: #00474B;
+    cursor: pointer;
+}
+
+.resetButton:hover {
+    background: #26C2AE;
+    color: #00474B;
 }

@@ -1,5 +1,11 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .inputHolder {
-    width: 379px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,4 +40,19 @@
 
 .inputHolder:hover {
     outline: 2px solid rgba(38, 194, 174, 1)
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
 }

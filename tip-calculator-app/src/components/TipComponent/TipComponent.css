@@ -21,6 +21,12 @@
     color: #FFFFFF;
     border: 0;
     outline: 0;
+    cursor: pointer;
+}
+
+.tipButton:hover {
+    background: rgba(38, 194, 174, 1);
+    color: rgba(0, 71, 75, 1);
 }
 
 .tipInput {
@@ -38,6 +44,10 @@
     color: #547878;
     border: 0;
     outline: 0;
+}
+
+.tipInput:hover {
+    border: 2px solid rgba(38, 194, 174, 1);
 }
 
 .tipInput::placeholder {

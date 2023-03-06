@@ -13,7 +13,7 @@
     background: rgba(235, 239, 242, 1);
 }
 
-.noteInput::placeholder {
+.noteInput {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -24,7 +24,7 @@
 
 .addNote {
     width: 88px;
-    height: 49px;
+    height: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,5 +32,7 @@
     background: #20EEB0;
     border-radius: 5px;
     color: white;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 26px;
+    cursor: pointer;
 }

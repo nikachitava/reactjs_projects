@@ -35,7 +35,3 @@
     gap: 18px;
 }
 
-.input[type="checkbox"] {
-    color: rgba(32, 238, 176, 1);
-    border: 2px solid rgba(32, 238, 176, 1)
-}

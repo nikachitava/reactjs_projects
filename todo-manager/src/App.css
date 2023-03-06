@@ -42,7 +42,16 @@
   padding: 23px 29px;
 }
 
+.todo_list_container::-webkit-scrollbar {
+  display: none;
+}
+
 .todo_list_container {
+  height: 250px;
+  padding-right: 10px;
+  width: 100%;
+  overflow-y: auto;
+  /* overflow-y: hidden; */
   margin-top: 36px;
 }
 

@@ -10,7 +10,7 @@ export default function TodoComponent(props: Itodo) {
         <li key={props.id} className="todo_list">
             <div className="left_side">
                 <p className='name'>{props.task}</p>
-                <p className='time_todo'>{props.time}</p>
+                <p className='time_todo'>Added time: {props.time}</p>
             </div>
             <div className="right_side">
                 {props.complete ? 

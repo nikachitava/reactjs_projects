@@ -12,13 +12,16 @@ export default function InputNote() {
         if(input !== '') {
             const id = todoList.length;
             const date = new Date();
+            const Time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+            
 
             setTodoList([
                 ...todoList,
                 {
                     id: id,
                     task: input,
-                    time: date.getDate(),
+                    time: `${date.toDateString()} ${Time}`,
                     complete: false,
                     handleComplete: handleComplete,
                     handleDeteleTask: handleDeteleTask 
